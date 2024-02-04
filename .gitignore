@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+Thumbs.db
+
+**/dist
+**/temp
+**/node_modules
+**/pnpm-debug.log*
+**/.pnpm-store
+**/.env
