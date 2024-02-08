@@ -1,0 +1,30 @@
+{
+  "name": "host",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.2.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@breadlee/eslint-config": "^0.0.1",
+    "@breadlee/tsconfig": "^0.0.1",
+    "@module-federation/nextjs-mf": "^7.0.8",
+    "@types/node": "^20",
+    "@types/react": "^18.2.53",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}

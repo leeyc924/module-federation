@@ -7,7 +7,7 @@ const deps = require('./package.json').dependencies;
 module.exports = (_, argv) => ({
   devServer: {
     static: { directory: path.resolve(__dirname) },
-    port: 8001,
+    port: 3000,
     hot: true,
   },
   module: {
@@ -53,10 +53,6 @@ module.exports = (_, argv) => ({
     }),
     new HtmlWebPackPlugin({
       template: './public/index.html',
-    }),
-    new EnvironmentPlugin({
-      NODE_ENV: 'development',
-      TEST: 1234,
     }),
   ],
   output: {
