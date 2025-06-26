@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "IronGeek.vscode-env",
+    "foxundermoon.shell-format",
+    "bradlc.vscode-tailwindcss",
+    "biomejs.biome"
+  ]
+}

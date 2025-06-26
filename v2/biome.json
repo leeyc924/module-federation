@@ -1,0 +1,258 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [{ "type": true }]
+          }
+        },
+        "useSortedAttributes": "on",
+        "useSortedKeys": "on",
+        "useSortedProperties": "on"
+      }
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single"
+    }
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**/*.html",
+      "**/*.css",
+      "**/*.js",
+      "**/*.mjs",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.json",
+      "!**/.gitignore",
+      "!**/dist",
+      "!**/build",
+      "!**/node_modules",
+      "!**/coverage",
+      "!**/env",
+      "!**/.next",
+      "!**/.turbo",
+      "!**/*.properties",
+      "!**/*.tsconfig.tsbuildinfo",
+      "!**/storybook-static",
+      "!package.json",
+      "!tsconfig.json"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "jsxQuoteStyle": "single",
+      "quoteStyle": "single"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
+  "linter": {
+    "domains": {
+      "next": "recommended",
+      "project": "recommended",
+      "react": "recommended",
+      "test": "recommended"
+    },
+    "enabled": true,
+    "rules": {
+      "a11y": {
+        "noAriaHiddenOnFocusable": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noAutofocus": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noDistractingElements": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noHeaderScope": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noInteractiveElementToNoninteractiveRole": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noLabelWithoutControl": "off",
+        "noNoninteractiveElementToInteractiveRole": "off",
+        "noNoninteractiveTabindex": "off",
+        "noPositiveTabindex": "off",
+        "noSvgWithoutTitle": "off",
+        "useAriaPropsForRole": "off",
+        "useGenericFontNames": "off",
+        "useKeyWithClickEvents": "off",
+        "useKeyWithMouseEvents": "off",
+        "useSemanticElements": "info",
+        "useValidAriaRole": "off",
+        "useValidAriaValues": "info"
+      },
+      "complexity": {
+        "noUselessFragments": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noUselessStringConcat": "error"
+      },
+      "correctness": {
+        "noUnusedFunctionParameters": "warn",
+        "noUnusedImports": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noUnusedVariables": "warn",
+        "useExhaustiveDependencies": "error",
+        "useHookAtTopLevel": "error",
+        "useJsxKeyInIterable": "error"
+      },
+      "nursery": {
+        "noRestrictedElements": {
+          "level": "error",
+          "options": {
+            "elements": {
+              "button": "button 대신 BaseButton 사용해주세요",
+              "Image": "next Image 대신 BaseImage 사용해주세요",
+              "input": "input 대신 BaseInput 사용해주세요",
+              "Link": "next Link 대신 BaseLink 사용해주세요",
+              "NextImage": "next Image 대신 BaseImage 사용해주세요",
+              "NextLink": "next Link 대신 BaseLink 사용해주세요"
+            }
+          }
+        },
+        "noUselessUndefined": "error",
+        "useConsistentObjectDefinition": "error",
+        "useIndexOf": "warn",
+        "useNumericSeparators": "warn",
+        "useSingleJsDocAsterisk": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "useSortedClasses": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useUniqueElementIds": "warn"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off",
+        "noReExportAll": "error"
+      },
+      "recommended": true,
+      "security": {
+        "noDangerouslySetInnerHtml": "info"
+      },
+      "style": {
+        "noDoneCallback": "error",
+        "noEnum": "error",
+        "noExportedImports": "error",
+        "noInferrableTypes": "error",
+        "noNestedTernary": "error",
+        "noParameterAssign": "error",
+        "noProcessEnv": "warn",
+        "noUnusedTemplateLiteral": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noUselessElse": "error",
+        "noYodaExpression": "error",
+        "useArrayLiterals": "error",
+        "useAsConstAssertion": "error",
+        "useBlockStatements": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useCollapsedElseIf": "error",
+        "useCollapsedIf": "error",
+        "useConsistentArrayType": "error",
+        "useConsistentBuiltinInstantiation": "error",
+        "useConsistentCurlyBraces": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useDefaultParameterLast": "error",
+        "useDefaultSwitchClause": "error",
+        "useEnumInitializers": "error",
+        "useExplicitLengthCheck": "error",
+        "useExponentiationOperator": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useImportType": {
+          "fix": "safe",
+          "level": "error",
+          "options": {
+            "style": "separatedType"
+          }
+        },
+        "useNodejsImportProtocol": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useNumberNamespace": "error",
+        "useSelfClosingElements": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useShorthandFunctionType": "error",
+        "useSingleVarDeclarator": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useTemplate": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useThrowNewError": "error",
+        "useThrowOnlyError": "error",
+        "useTrimStartEnd": "error"
+      },
+      "suspicious": {
+        "noApproximativeNumericConstant": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noArrayIndexKey": "info",
+        "noEvolvingTypes": "error",
+        "noExplicitAny": "warn",
+        "noGlobalIsFinite": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noGlobalIsNan": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noShadowRestrictedNames": "info",
+        "noVar": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "useAwait": "error"
+      }
+    }
+  }
+}

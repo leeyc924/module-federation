@@ -1,0 +1,20 @@
+{
+  "name": "rsbuild-module-federation2-poc",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.5",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "engines": {
+    "node": "22.15.0"
+  },
+  "volta": {
+    "node": "22.15.0"
+  }
+}
