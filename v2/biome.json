@@ -130,19 +130,6 @@
         "useJsxKeyInIterable": "error"
       },
       "nursery": {
-        "noRestrictedElements": {
-          "level": "error",
-          "options": {
-            "elements": {
-              "button": "button 대신 BaseButton 사용해주세요",
-              "Image": "next Image 대신 BaseImage 사용해주세요",
-              "input": "input 대신 BaseInput 사용해주세요",
-              "Link": "next Link 대신 BaseLink 사용해주세요",
-              "NextImage": "next Image 대신 BaseImage 사용해주세요",
-              "NextLink": "next Link 대신 BaseLink 사용해주세요"
-            }
-          }
-        },
         "noUselessUndefined": "error",
         "useConsistentObjectDefinition": "error",
         "useIndexOf": "warn",
